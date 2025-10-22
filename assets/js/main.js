@@ -234,6 +234,22 @@ $(function() { // Shorthand for $(document).ready()
         }
     });
 
+
+      // --- Location Benefits Tabs ---
+    if ($('#location-tabs').length) {
+        $('.location-tab').on('click', function() {
+            const targetId = $(this).data('target');
+
+            // Update button active state
+            $('.location-tab').removeClass('active');
+            $(this).addClass('active');
+
+            // Hide all panels, then show the target panel
+            $('.location-panel').addClass('hidden');
+            $('#' + targetId).removeClass('hidden');
+        });
+    }
+
     
     // =======================================================
     // UNIVERSAL LIGHTBOX/POPUP LOGIC (ADD THIS CODE)
