@@ -234,10 +234,7 @@ $(function() { // Shorthand for $(document).ready()
         }
     });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2ffd8fcadc5cfc51379674f4825a4ee72da3a1c5
+    
       // --- Location Benefits Tabs ---
     if ($('#location-tabs').length) {
         $('.location-tab').on('click', function() {
@@ -254,6 +251,129 @@ $(function() { // Shorthand for $(document).ready()
     }
 
     
+    // =======================================================
+    // VANILLA JS COUNTER ANIMATION (NO LIBRARIES)
+    // =======================================================
+    const statsSection = document.getElementById('stats-section');
+    const counters = document.querySelectorAll('.stat-number');
+    const animationDuration = 2000; // Animation duration in milliseconds
+
+    // Function to animate a single number
+    const animateCounter = (element) => {
+        const target = parseInt(element.getAttribute('data-target'), 10);
+        let startTime = null;
+
+        // The step function that runs on each frame
+        const step = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / animationDuration, 1);
+            let currentValue = Math.floor(progress * target);
+            
+            // Format numbers with commas (e.g., 10,000)
+            let formattedValue = currentValue.toLocaleString();
+            
+            // Custom formatting for large numbers like Lakh
+            if (target === 300000) {
+                 // Start showing "Lakh" after reaching 100,000
+                 if(currentValue >= 100000) {
+                     formattedValue = (currentValue / 100000).toFixed(1).replace('.0', '');
+                 } else {
+                     // Show comma-separated number until then
+                      formattedValue = currentValue.toLocaleString();
+                 }
+            } else if (target === 10000) {
+                 // Start showing "K" after reaching 1,000
+                 if (currentValue >= 1000) {
+                     formattedValue = (currentValue / 1000).toFixed(1).replace('.0', '');
+                 } else {
+                     formattedValue = currentValue.toLocaleString();
+                 }
+            }
+
+            element.innerText = formattedValue;
+            
+            // Continue the animation until the end
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+
+        // Start the animation
+        window.requestAnimationFrame(step);
+    };
+
+    // Use IntersectionObserver to trigger the animation on scroll
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // If the section is in view
+            if (entry.isIntersecting) {
+                // Start the animation for each counter
+                counters.forEach(counter => {
+                    animateCounter(counter);
+                });
+                // Stop observing once the animation has been triggered
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the section is visible
+    });
+
+    // Start observing the section if it exists
+    if (statsSection) {
+        observer.observe(statsSection);
+    }
+
+
+    // =======================================================
+    // CONTACT FORM SUBMISSION (AJAX to Node.js backend)
+    // =======================================================
+    $('#contact-form').on('submit', function(e) {
+        e.preventDefault(); // Prevent the default page reload on submit
+
+        const submitButton = $('#submit-button');
+        const feedbackMessage = $('#form-feedback');
+
+        // Get all selected projects
+        const selectedProjects = [];
+        $('input[name="projects"]:checked').each(function() {
+            selectedProjects.push($(this).val());
+        });
+
+        // Collect all form data into an object
+        const formData = {
+            name: $('#name').val(),
+            contact: $('#contact').val(),
+            email: $('#email').val(),
+            message: $('#message').val(),
+            projects: selectedProjects,
+        };
+
+        // Change button text to show it's processing
+        submitButton.text('SENDING...').prop('disabled', true);
+        feedbackMessage.text('').removeClass('text-green-600 text-red-600');
+
+        // Send the data to your backend server using AJAX
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/send-email', // The URL of your backend endpoint
+            data: JSON.stringify(formData),
+            contentType: 'application/json',
+            success: function(response) {
+                // Handle success
+                feedbackMessage.text(response.message).addClass('text-green-600');
+                submitButton.text('SUBMIT').prop('disabled', false);
+                $('#contact-form')[0].reset(); // Clear the form
+            },
+            error: function(xhr) {
+                // Handle errors
+                const errorMessage = xhr.responseJSON ? xhr.responseJSON.message : 'An error occurred.';
+                feedbackMessage.text(errorMessage).addClass('text-red-600');
+                submitButton.text('SUBMIT').prop('disabled', false);
+            }
+        });
+    });
+
     // =======================================================
     // UNIVERSAL LIGHTBOX/POPUP LOGIC (ADD THIS CODE)
     // =======================================================

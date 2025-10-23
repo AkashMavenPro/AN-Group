@@ -178,7 +178,7 @@
       @apply h-auto;
   }
   /* On screens smaller than md, set a specific width. On md and larger, Swiper's slidesPerView: 3 takes over. */
-  @screen <md {
+  @screen {
     .amenities-swiper .swiper-slide {
         @apply w-10/12;
     }

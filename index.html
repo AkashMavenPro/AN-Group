@@ -25,17 +25,17 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-8">
             <a href="index.html" class="desktop-nav-link">Home</a>
-            <a href="#" class="desktop-nav-link">About</a>
+            <a href="about.html" class="desktop-nav-link">About</a>
             
             <!-- Projects Dropdown (Multi-level) -->
-            <div class="relative group" id="projects-dropdown">
+            <!-- <div class="relative group" id="projects-dropdown">
                 <button class="desktop-nav-link flex items-center space-x-2">
                     <span>Projects</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
-                <!-- Dropdown Panel -->
+                
                 <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-48 bg-white text-black rounded-md shadow-lg py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
-                    <!-- Submenu Item: Ongoing -->
+                    
                     <div class="relative submenu-container">
                         <a href="#" class="dropdown-link flex justify-between items-center">
                             <span>Ongoing</span>
@@ -46,7 +46,7 @@
                             <a href="#" class="dropdown-link">Project 2</a>
                         </div>
                     </div>
-                    <!-- Submenu Item: Recent -->
+                    
                     <div class="relative submenu-container">
                         <a href="#" class="dropdown-link flex justify-between items-center">
                             <span>Recent</span>
@@ -57,7 +57,7 @@
                             <a href="#" class="dropdown-link">Project 2</a>
                         </div>
                     </div>
-                    <!-- Submenu Item: Past -->
+                    
                     <div class="relative submenu-container">
                         <a href="#" class="dropdown-link flex justify-between items-center">
                             <span>Past</span>
@@ -69,10 +69,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
-            <a href="#" class="desktop-nav-link">Contact</a>
-            <a href="#" class="ml-4 bg-brand-peach text-black px-6 py-2 font-semibold hover:bg-white transition">ENQUIRE NOW</a>
+            <a href="contact.html" class="desktop-nav-link">Contact</a>
+            <a href="contact.html" class="ml-4 bg-brand-peach text-black px-6 py-2 font-semibold hover:bg-white transition">ENQUIRE NOW</a>
         </nav>
         
         <!-- Mobile Menu Button -->
@@ -171,64 +171,21 @@
         </div>
 
         <!-- SLIDE 2 -->
-        <div class="swiper-slide hero-slide" data-slide="1">
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/image/banner.png');"></div>
-            <div class="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-0"></div>
-            <!-- Slide 2 Content -->
-            <div class="relative z-10 h-full w-full flex flex-col justify-end">
-                <div class="container mx-auto px-6 md:px-12 pb-32 sm:pb-40 md:pb-32">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <a href="#" class="relative flex items-center justify-center w-28 h-28 md:w-32 md:h-32 group js-lightbox" data-type="video" data-src="https://www.youtube.com/embed/XXnQW9TCkBE?si=1DCoEYH0GNPGviso">
-                        <!-- Play Icon -->
-                        <svg class="w-12 h-12 text-white transform transition-transform group-hover:scale-100 z-10" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                        </svg>
-
-                        <!-- Circular Rotating Text -->
-                        <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full animate-spin-slow">
-                            <path id="circlePath" fill="none" d="M 60,60 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"></path>
-                            <text fill="#fff" class="text-[12px] uppercase tracking-wider">
-                                <textPath href="#circlePath" startOffset="0%" textLength="314"> • DIVE INTO THE AN EXPERIENCE </textPath>
-                            </text>
-                        </svg>
-                    </a>
-                </div>
-                    <div class="max-w-2xl">
-                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-wide text-white">Another Featured Speaker</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDE 3 -->
-        <div class="swiper-slide hero-slide" data-slide="2">
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/image/banner.png');"></div>
-            <div class="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-0"></div>
-             <!-- Slide 3 Content -->
-            <div class="relative z-10 h-full w-full flex flex-col justify-end">
-                <div class="container mx-auto px-6 md:px-12 pb-32 sm:pb-40 md:pb-32">
-                    <div class="max-w-2xl">
-                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-wide text-white">Literary Discussions</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDE 4 -->
+<!-- 
         <div class="swiper-slide hero-slide" data-slide="3">
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/image/banner.png');"></div>
             <div class="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-0"></div>
-             <!-- Slide 4 Content -->
+            
             <div class="relative z-10 h-full w-full flex flex-col justify-end">
                 <div class="container mx-auto px-6 md:px-12 pb-32 sm:pb-40 md:pb-32">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <a href="#" class="relative flex items-center justify-center w-28 h-28 md:w-32 md:h-32 group js-lightbox" data-type="video" data-src="https://www.youtube.com/embed/XXnQW9TCkBE?si=1DCoEYH0GNPGviso">
-                        <!-- Play Icon -->
+                        
                         <svg class="w-12 h-12 text-white transform transition-transform group-hover:scale-100 z-10" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
                         </svg>
 
-                        <!-- Circular Rotating Text -->
+                      
                         <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full animate-spin-slow">
                             <path id="circlePath" fill="none" d="M 60,60 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"></path>
                             <text fill="#fff" class="text-[12px] uppercase tracking-wider">
@@ -243,6 +200,55 @@
                 </div>
             </div>
         </div>
+         -->
+
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide hero-slide" data-slide="2">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/image/AN\ Group\ Homepage\ Banner.jpg');"></div>
+            <div class="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-0"></div>
+             <!-- Slide 3 Content -->
+            <div class="relative z-10 h-full w-full flex flex-col justify-end">
+                <div class="container mx-auto px-6 md:px-12 pb-32 sm:pb-40 md:pb-32">
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl leading-tight tracking-wide text-white">
+                        15 Years Of<br>
+                        <span class="font-bold">Building Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4 -->
+<!-- 
+        <div class="swiper-slide hero-slide" data-slide="3">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/image/banner.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent z-0"></div>
+            
+            <div class="relative z-10 h-full w-full flex flex-col justify-end">
+                <div class="container mx-auto px-6 md:px-12 pb-32 sm:pb-40 md:pb-32">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <a href="#" class="relative flex items-center justify-center w-28 h-28 md:w-32 md:h-32 group js-lightbox" data-type="video" data-src="https://www.youtube.com/embed/XXnQW9TCkBE?si=1DCoEYH0GNPGviso">
+                        
+                        <svg class="w-12 h-12 text-white transform transition-transform group-hover:scale-100 z-10" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                        </svg>
+
+                      
+                        <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full animate-spin-slow">
+                            <path id="circlePath" fill="none" d="M 60,60 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"></path>
+                            <text fill="#fff" class="text-[12px] uppercase tracking-wider">
+                                <textPath href="#circlePath" startOffset="0%" textLength="314"> • DIVE INTO THE AN EXPERIENCE </textPath>
+                            </text>
+                        </svg>
+                    </a>
+                </div>
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-wide text-white">Engaging Audiences</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
     </div>
     
     <!-- =================================== -->
@@ -289,21 +295,21 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide" data-name="ATREYAA" data-link="#">
-                    <img src="assets/images/image/Rectangle 41.png" class="absolute inset-0 w-full h-full object-cover">
+                    <img src="assets/images/image/ATREYAA-1.png" class="absolute inset-0 w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
                 <div class="swiper-slide" data-name="NIRMALA" data-link="#">
-                     <img src="assets/images/image/Rectangle 41.png" class="absolute inset-0 w-full h-full object-cover">
+                     <img src="assets/images/image/NIRMALA.jpg" class="absolute inset-0 w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
-                <div class="swiper-slide" data-name="VISTA" data-link="#">
-                     <img src="assets/images/image/Rectangle 41.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="swiper-slide" data-name="SREE" data-link="#">
+                     <img src="assets/images/image/SREE.jpg" class="absolute inset-0 w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
-                <div class="swiper-slide" data-name="HERITAGE" data-link="#">
+                <!-- <div class="swiper-slide" data-name="HERITAGE" data-link="#">
                      <img src="assets/images/image/Rectangle 41.png" class="absolute inset-0 w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -312,7 +318,7 @@
             <div class="max-w-md mx-auto lg:mx-0">
                 <h2 class="text-5xl md:text-6xl font-bold text-brand-purple mb-6">Ongoing<br>Projects</h2>
                 <p class="text-text-primary mb-10 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                    AN Group is currently developing several residential projects across prominent locations in Kolkata. These projects are designed to cater to modern lifestyles, with a focus on quality construction and timely delivery.
                 </p>
                 <div class="flex items-center space-x-6">
                     <button id="project-prev" class="text-3xl font-bold hover:text-brand-purple transition-colors duration-300"><i class="ti ti-arrow-narrow-left"></i></button>
@@ -353,7 +359,7 @@
     </div>
 </section>
      <!-- Decades of Trust Section -->
-    <section class="bg-brand-peach py-16 md:py-24" style="background-image: url('assets/images/image/marble-background.png'); background-size: cover;">
+    <section id="stats-section" class="bg-brand-peach py-16 md:py-24" style="background-image: url('assets/images/image/marble-background.png'); background-size: cover;">
         <div class="container mx-auto px-6">
             <div class="grid lg:grid-cols-3 gap-12 items-center">
                 <!-- Left Column: Title -->
@@ -378,8 +384,8 @@
 <path d="M53.3204 48.9958C51.3569 49.4253 49.3935 49.8548 47.3686 50.223C41.8464 51.3888 36.3242 52.4932 30.8019 53.5977C29.3293 53.9045 27.7954 53.7204 26.2614 53.659C21.5368 53.3522 16.8123 52.9841 12.0877 52.6773C9.14247 52.4932 6.13592 52.3091 3.19073 52.0637C2.76122 52.0637 2.33171 52.0024 1.96356 51.6956C2.08628 51.2661 2.51579 51.2047 2.82258 51.082C6.62679 49.3639 10.4924 47.7686 14.1738 45.8665C16.5668 44.6394 18.8371 44.9462 21.2914 45.1916C26.8136 45.8052 32.3972 46.3574 37.9195 46.971C43.0122 47.5232 48.1049 48.0754 53.1977 48.5663C53.3204 48.689 53.3204 48.8117 53.3204 48.9958Z" fill="#F5B11E"/>
 </svg>
 
-                            <p class="text-2xl font-bold text-black">3Lakh+ Sq.Ft.</p>
-                            <p class="text-text-secondary">of Development Done</p>
+                            <p class="text-2xl font-bold text-black"><span class="stat-number" data-target="300000">0</span>Lakh+ Sq.Ft.</p>
+                        <p class="text-text-secondary">of Development Done</p>
                         </div>
 
                         <!-- Stat 2: Projects Delivered -->
@@ -400,8 +406,8 @@
 <path d="M35.365 68.1062C24.221 68.1062 13.077 68.1062 1.93306 68.1062C1.37586 68.1062 0.666697 68.3594 0.210807 67.7516C-0.346392 66.9411 0.261462 65.9787 1.3252 65.9787C4.36447 65.9787 7.35308 65.9787 10.3923 65.9787C29.8437 65.9787 49.3456 65.9787 68.7969 65.9787C69.658 65.9787 70.7218 65.6747 70.6205 67.1944C70.5698 67.7516 70.3672 68.1062 69.81 68.1062C69.3541 68.1062 68.8476 68.1062 68.3917 68.1062C57.3997 68.1062 46.357 68.1062 35.365 68.1062Z" fill="#764199"/>
 </svg>
 
-                            <p class="text-2xl font-bold text-black">15+ Projects</p>
-                            <p class="text-text-secondary">Delivered</p>
+                             <p class="text-2xl font-bold text-black"><span class="stat-number" data-target="15">0</span>+ Projects</p>
+                        <p class="text-text-secondary">Delivered</p>
                         </div>
 
                         <!-- Stat 3: Years of Experience -->
@@ -421,8 +427,8 @@
 <path d="M59.5248 93.1158C59.5248 94.4322 58.4163 95.5407 57.1692 95.5407C55.9914 95.5407 54.9521 94.9172 53.9822 94.2936C53.6358 94.0858 53.7743 93.8087 53.9129 93.5315C54.4672 92.423 55.2293 91.3838 55.645 90.206C55.7142 89.9981 55.8528 89.721 56.1299 89.9288C57.2385 90.5524 58.4856 90.9681 59.1784 92.1459C59.4555 92.423 59.5941 92.7694 59.5248 93.1158Z" fill="#F5B11E"/>
 </svg>
 
-                            <p class="text-2xl font-bold text-black">15+ Years</p>
-                            <p class="text-text-secondary">of Experience</p>
+                        <p class="text-2xl font-bold text-black"><span class="stat-number" data-target="15">0</span>+ Years</p>
+                        <p class="text-text-secondary">of Experience</p>
                         </div>
 
                         <!-- Stat 4: Lives Touched -->
@@ -472,8 +478,8 @@
 <path d="M63.6755 0.0358887C64.6828 0.0358887 65.4383 0.827338 65.4383 1.83464C65.4383 2.84193 64.6469 3.63338 63.6396 3.63338C62.7042 3.63338 61.8408 2.73401 61.8408 1.79866C61.8768 0.863313 62.7042 0.0358887 63.6755 0.0358887Z" fill="#764199"/>
 </svg>
 
-                            <p class="text-2xl font-bold text-black">10K+ Lives</p>
-                            <p class="text-text-secondary">Touched</p>
+                        <p class="text-2xl font-bold text-black"><span class="stat-number" data-target="10000">0</span>K+ Lives</p>
+                        <p class="text-text-secondary">Touched</p>
                         </div>
 
                         <!-- Stat 5: Ongoing Projects -->
@@ -486,8 +492,8 @@
 <path d="M51.6279 48.203C53.5172 48.203 55.3525 48.203 57.2417 48.203C57.8895 48.203 58.2133 48.4189 58.2133 49.1206C58.2133 49.8223 58.0514 50.2002 57.2417 50.2002C53.4632 50.2002 49.6847 50.2002 45.8522 50.2002C45.0965 50.2002 44.9346 49.8223 44.9346 49.1206C44.9346 48.4189 45.1505 48.149 45.8522 48.203C47.7954 48.203 49.7387 48.203 51.6279 48.203Z" fill="#F5B11E"/>
 </svg>
 
-                            <p class="text-2xl font-bold text-black">10+ Ongoing</p>
-                            <p class="text-text-secondary">Projects</p>
+                            <p class="text-2xl font-bold text-black"><span class="stat-number" data-target="10">0</span>+ Ongoing</p>
+                        <p class="text-text-secondary">Projects</p>
                         </div>
 
                     </div>
@@ -522,13 +528,13 @@
                 <div class="swiper-slide">
                     <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
                         <div class="p-8 order-2 md:order-1">
-                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Amit Agarwal</h3>
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Rajesh Verma</h3>
                             <p class="text-text-primary md:text-xl leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                Investing in a property with AN Group has been a truly seamless experience. Their professionalism and commitment to delivering on their promises are outstanding. The quality of construction is top-notch, and they were transparent throughout the process.
                             </p>
                         </div>
                         <div class="order-1 md:order-2">
-                            <img src="assets/images/image/Rectangle 47.png" alt="Testimonial from Amit Agarwal" class="w-full h-full object-cover">
+                            <img src="assets/images/clients/client-1.jpeg" alt="Testimonial from Rajesh Verma" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -536,13 +542,13 @@
                 <div class="swiper-slide">
                     <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
                         <div class="p-8 order-2 md:order-1">
-                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Priya Singh</h3>
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Sandeep Patel</h3>
                             <p class="text-text-primary md:text-xl leading-relaxed">
-                                Aliquam in hendrerit urna. Sed non risus. It has been a wonderful experience being associated with AN Group. Their commitment to quality and timely delivery is commendable.
+                                From the moment of inquiry to the final handover, the team at AN Group was incredibly supportive. They have a customer-centric approach that makes you feel valued. I'm a proud owner of a flat in their new residential project.
                             </p>
                         </div>
                         <div class="order-1 md:order-2">
-                            <img src="assets/images/image/Rectangle 47.png" alt="Testimonial from Priya Singh" class="w-full h-full object-cover">
+                            <img src="assets/images/clients/client-2.jpeg" alt="Testimonial from Sandeep Patel" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -550,13 +556,13 @@
                 <div class="swiper-slide">
                     <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
                         <div class="p-8 order-2 md:order-1">
-                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Rahul Kumar</h3>
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Vijay Sharma</h3>
                             <p class="text-text-primary md:text-xl leading-relaxed">
-                                Pellentesque sit amet sapien fringilla, mattis ligula. The attention to detail in their projects is something that stands out. I am a proud owner of an AN Group home.
+                                What impressed me the most about AN Group is their attention to detail and the quality of the materials used in construction. My family and I are extremely happy with our new home. It’s been a great journey with them.
                             </p>
                         </div>
                         <div class="order-1 md:order-2">
-                            <img src="assets/images/image/Rectangle 47.png" alt="Testimonial from Rahul Kumar" class="w-full h-full object-cover">
+                            <img src="assets/images/clients/client-3.jpeg" alt="Testimonial from Vijay Sharma" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -564,13 +570,153 @@
                 <div class="swiper-slide">
                     <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
                         <div class="p-8 order-2 md:order-1">
-                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Sunita Sharma</h3>
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Arun Singh</h3>
                             <p class="text-text-primary md:text-xl leading-relaxed">
-                                Cras elementum ultrices diam. Maecenas ligula massa. From booking to possession, the entire process was smooth and transparent. Highly recommended!
+                                I was looking for a commercial space, and AN Group provided the perfect solution. Their project location is strategic, and the infrastructure is modern. It has been a significant boost for my business. Highly recommended for commercial properties.
                             </p>
                         </div>
                         <div class="order-1 md:order-2">
-                            <img src="assets/images/image/Rectangle 47.png" alt="Testimonial from Sunita Sharma" class="w-full h-full object-cover">
+                            <img src="assets/images/clients/client-4.jpeg" alt="Testimonial from Arun Singh" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Manoj Gupta</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                Timely delivery is a rare find in the real estate sector, but AN Group stands by its word. They handed over the property on the promised date without compromising on quality. A trustworthy and reliable developer.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-5.jpeg" alt="Testimonial from Manoj Gupta" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Suresh Kumar</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                The post-sales service from AN Group has been exceptional. They are always available to address any concerns and have been very helpful even after we moved in. It shows their commitment to long-term customer relationships.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-6.jpeg" alt="Testimonial from Suresh Kumar" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Vikram Reddy</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                I appreciate the modern amenities and the thoughtful design of my apartment. AN Group has created a living space that is not just a building, but a community. It feels great to be a part of it.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-7.jpeg" alt="Testimonial from Vikram Reddy" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Pooja Desai</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                As a first-time homebuyer, I was nervous, but AN Group made the entire process smooth and transparent. Their team guided me at every step. I am so glad I chose them for my dream home.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-8.jpeg" alt="Testimonial from Pooja Desai" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Rakesh Mishra</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                The structural integrity and design aesthetics of AN Group's projects are commendable. You can see the dedication to quality in every corner. A great investment that offers true value for money.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-9.jpeg" alt="Testimonial from Rakesh Mishra" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 10 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Neha Joshi</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                Being associated with AN Group has been a wonderful experience. Their commitment to creating sustainable and green living spaces is something I truly admire. My apartment is everything I hoped for and more.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-10.jpeg" alt="Testimonial from Neha Joshi" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 11 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Anil Yadav</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                I bought a commercial office space from AN Group, and it has been one of my best investment decisions. The project has excellent facilities and is located in a prime business area, which has greatly benefited my operations.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-11.jpeg" alt="Testimonial from Anil Yadav" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 12 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Deepak Choudhary</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                The legal and documentation process was handled with utmost professionalism by the AN Group team. They ensured everything was clear and straightforward, which gave me great peace of mind.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-12.jpeg" alt="Testimonial from Deepak Choudhary" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 13 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Prakash Rao</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                What stands out is the blend of functionality and aesthetics in their projects. My home is not only beautiful but also very practical for daily living. AN Group truly understands the needs of a modern family.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-13.jpeg" alt="Testimonial from Prakash Rao" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 14 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+                        <div class="p-8 order-2 md:order-1">
+                            <h3 class="text-3xl md:text-5xl font-bold text-black mb-4">Girish Nair</h3>
+                            <p class="text-text-primary md:text-xl leading-relaxed">
+                                I had a great experience with AN Group. They are building more than just properties; they are building trust. The entire team is courteous, and the project was completed as per the schedule. I would definitely recommend them.
+                            </p>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="assets/images/clients/client-14.jpeg" alt="Testimonial from Girish Nair" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -607,7 +753,7 @@
                     Recent<br>Projects
                 </h2>
                 <p class="text-text-primary mb-10 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                    Showcasing their track record of successful project execution, AN Group has recently completed several residential complexes. These projects stand as a testament to the company's dedication to quality and have been handed over to residents in recent years.
                 </p>
                 <div class="flex items-center space-x-6  mr-40 ml-0">
                     <button id="recent-prev" class="text-3xl font-bold hover:text-brand-purple transition-colors duration-300"><i class="ti ti-arrow-narrow-left"></i></button>
@@ -625,10 +771,10 @@
                 <div class="swiper-wrapper">
                     
                     <!-- Slide 1 (WITH SOLD OUT BANNER) -->
-                    <div class="swiper-slide">
-                        <!-- UPDATED: Added overflow-hidden to the link -->
+                    <!-- <div class="swiper-slide">
+                        
                         <a href="#" class="block relative group shadow-lg overflow-hidden">
-                            <!-- ADDED: "Sold Out" Banner -->
+                            
                             <div class="absolute top-5 -left-14 w-48 text-center transform -rotate-45 bg-red-600 text-white py-1 text-sm font-bold uppercase tracking-wider shadow-md">
                                 Sold Out
                             </div>
@@ -637,28 +783,72 @@
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                             <div class="absolute bottom-6 left-6 text-white">
                                 <h3 class="text-2xl font-bold flex items-center">NIRMALA BAGAN <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
-                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; Rs. 33 Lakhs Onwards</p>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                     
                     <!-- Slide 2 (Normal) -->
                     <div class="swiper-slide">
                         <a href="#" class="block relative group shadow-lg overflow-hidden">
-                            <img src="assets/images/image/building-1.png" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
+                            <img src="assets/images/recent/HARI.jpg" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                             <div class="absolute bottom-6 left-6 text-white">
-                                <h3 class="text-2xl font-bold flex items-center">NIRMALA BAGAN <span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
-                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; Rs. 33 Lakhs Onwards</p>
+                                <h3 class="text-2xl font-bold flex items-center">NIRMALA HARI<span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="block relative group shadow-lg overflow-hidden">
+                            <img src="assets/images/recent/NIRMALA KRISHNAM.jpg" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold flex items-center">NIRMALA KRISHNAM<span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="block relative group shadow-lg overflow-hidden">
+                            <img src="assets/images/recent/NIRMALA PRAKASH.jpeg" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold flex items-center">NIRMALA PRAKASH<span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="block relative group shadow-lg overflow-hidden">
+                            <img src="assets/images/recent/NIRMALA_VIEW.jpg" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold flex items-center">NIRMALA VIEW<span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="block relative group shadow-lg overflow-hidden">
+                            <img src="assets/images/recent/VISTA.jpg" alt="NIRMALA BAGAN" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold flex items-center">NIRMALA VISTA<span class="ml-2 transition-transform duration-300 group-hover:translate-x-2"><i class="ti ti-arrow-narrow-right"></i></span></h3>
+                                <p class="text-sm mt-1">2BHK | 3BHK &nbsp;|&nbsp; </p>
                             </div>
                         </a>
                     </div>
                     
                     <!-- Slide 3 (WITH SOLD OUT BANNER) -->
-                    <div class="swiper-slide">
-                        <!-- UPDATED: Added overflow-hidden to the link -->
+                    <!-- <div class="swiper-slide">
+                    
                          <a href="#" class="block relative group shadow-lg overflow-hidden">
-                            <!-- ADDED: "Sold Out" Banner -->
+                           
                             <div class="absolute top-5 -left-14 w-48 text-center transform -rotate-45 bg-red-600 text-white py-1 text-sm font-bold uppercase tracking-wider shadow-md">
                                 Sold Out
                             </div>
@@ -670,7 +860,7 @@
                                 <p class="text-sm mt-1">3BHK | 4BHK &nbsp;|&nbsp; Rs. 1.2 Cr Onwards</p>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -710,62 +900,65 @@
 
                 <!-- Right Column: Form -->
                 <div>
-                    <form action="#" method="POST" class="space-y-8">
-                        <div>
-                            <input type="text" name="name" id="name" placeholder="NAME" class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2">
-                        </div>
-                        <div>
-                            <input type="text" name="contact" id="contact" placeholder="CONTACT NO." class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2">
-                        </div>
-                         <div>
-                            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2">
-                        </div>
-                        <div>
-                            <textarea name="message" id="message" rows="4" placeholder="What are you looking for?" class="w-full bg-transparent border border-zinc-400 focus:outline-none focus:border-black p-2"></textarea>
-                        </div>
-                        
-                        <div>
-                            <label class="text-sm font-semibold text-text-secondary">PROJECTS</label>
-                            <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-3 mt-4 text-text-primary">
-                                
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>ATREYAA</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA PRAKASH</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA BAGAN</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA KRISHNAM</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA VIEW</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA VISTA</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 bg-zinc-300"></div>
-                                    <span>NIRMALA HERITAGE</span>
-                                </div>
+                   <!-- Add an id to the form -->
+<form id="contact-form" action="#" method="POST" class="space-y-8">
+    <div>
+        <input type="text" name="name" id="name" placeholder="NAME" class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2" required>
+    </div>
+    <div>
+        <input type="text" name="contact" id="contact" placeholder="CONTACT NO." class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2" required>
+    </div>
+    <div>
+        <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" class="w-full bg-transparent border-b border-zinc-400 focus:outline-none focus:border-black py-2" required>
+    </div>
+    <div>
+        <textarea name="message" id="message" rows="4" placeholder="What are you looking for?" class="w-full bg-transparent border border-zinc-400 focus:outline-none focus:border-black p-2"></textarea>
+    </div>
+    
+    <div>
+        <label class="text-sm font-semibold text-text-secondary">PROJECTS</label>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-3 mt-4 text-text-primary">
+            
+            <!-- Use checkboxes for easier selection -->
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="ATREYAA" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>ATREYAA</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA PRAKASH" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA PRAKASH</span>
+            </label>
+             <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA BAGAN" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA BAGAN</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA KRISHNAM" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA KRISHNAM</span>
+            </label>
+             <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA VIEW" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA VIEW</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA VISTA" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA VISTA</span>
+            </label>
+             <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" name="projects" value="NIRMALA HERITAGE" class="w-4 h-4 text-brand-purple focus:ring-brand-purple border-gray-400">
+                <span>NIRMALA HERITAGE</span>
+            </label>
+        </div>
+    </div>
 
-                            </div>
-                        </div>
-
-                        <div>
-                            <button type="submit" class="bg-black text-white font-bold py-3 px-10 hover:bg-zinc-800 transition-colors duration-300">
-                                SUBMIT
-                            </button>
-                        </div>
-                    </form>
+    <div>
+        <button type="submit" id="submit-button" class="bg-black text-white font-bold py-3 px-10 hover:bg-zinc-800 transition-colors duration-300">
+            SUBMIT
+        </button>
+        <!-- Add a div for form feedback messages -->
+        <p id="form-feedback" class="mt-4 text-sm"></p>
+    </div>
+</form>
                 </div>
 
             </div>

@@ -8,9 +8,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-zinc-200: oklch(92% 0.004 286.32);
     --color-zinc-300: oklch(87.1% 0.006 286.286);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
@@ -751,6 +753,9 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
+  }
   .border-transparent {
     border-color: transparent;
   }
@@ -1032,6 +1037,9 @@
   .text-brand-purple {
     color: var(--color-brand-purple);
   }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
   .text-red-600 {
     color: var(--color-red-600);
   }
@@ -1232,6 +1240,11 @@
   .focus\:border-black {
     &:focus {
       border-color: var(--color-black);
+    }
+  }
+  .focus\:ring-brand-purple {
+    &:focus {
+      --tw-ring-color: var(--color-brand-purple);
     }
   }
   .focus\:outline-none {
@@ -1918,7 +1931,7 @@
   .amenities-swiper .swiper-slide {
     height: auto;
   }
-  @screen <md {
+  @screen {
     .amenities-swiper .swiper-slide {
       width: calc(10/12 * 100%);
     }
