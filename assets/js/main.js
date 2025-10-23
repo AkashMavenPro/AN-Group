@@ -234,7 +234,10 @@ $(function() { // Shorthand for $(document).ready()
         }
     });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ffd8fcadc5cfc51379674f4825a4ee72da3a1c5
       // --- Location Benefits Tabs ---
     if ($('#location-tabs').length) {
         $('.location-tab').on('click', function() {
